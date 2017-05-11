@@ -3,21 +3,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="16dp"
+    android:layout_margin="10dp"
     android:animateLayoutChanges="true"
     tools:context="com.epam.androidlab.task4.MainActivity">
 
     <ImageView
         android:id="@+id/image_container"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center" />
 
     <TextView
-        android:id="@+id/io_text"
+        android:id="@+id/hello_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="top|start"
         android:layout_margin="15dp"
         android:text="@string/hello" />
+    <!--TODO: animate hello_text position change -->
+
+    <TextView
+        android:id="@+id/time_left_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_margin="70dp" />
 </FrameLayout>
